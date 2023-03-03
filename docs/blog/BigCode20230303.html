@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>大きすぎるコードにどう立ち向かって行けばいいのか(programming) | Nemurin Hub</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kosugi+Maru">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <meta name="description" content="Blog by Nemu">
+    
+    <link rel="preload" href="/nemurin-hub/assets/css/0.styles.3944a266.css" as="style"><link rel="preload" href="/nemurin-hub/assets/js/app.1f09a953.js" as="script"><link rel="preload" href="/nemurin-hub/assets/js/2.733019b2.js" as="script"><link rel="preload" href="/nemurin-hub/assets/js/8.757fd98f.js" as="script"><link rel="prefetch" href="/nemurin-hub/assets/js/10.524edd24.js"><link rel="prefetch" href="/nemurin-hub/assets/js/3.414988de.js"><link rel="prefetch" href="/nemurin-hub/assets/js/4.d12742be.js"><link rel="prefetch" href="/nemurin-hub/assets/js/5.216cae74.js"><link rel="prefetch" href="/nemurin-hub/assets/js/6.2d0a63f8.js"><link rel="prefetch" href="/nemurin-hub/assets/js/7.e12f3052.js"><link rel="prefetch" href="/nemurin-hub/assets/js/9.a77c9675.js">
+    <link rel="stylesheet" href="/nemurin-hub/assets/css/0.styles.3944a266.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/nemurin-hub/" class="home-link router-link-active"><!----> <span class="site-name">Nemurin Hub</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="大きすぎるコードにどう立ち向かって行けばいいのか-programming"><a href="#大きすぎるコードにどう立ち向かって行けばいいのか-programming" class="header-anchor">#</a> 大きすぎるコードにどう立ち向かって行けばいいのか(programming)</h1> <h2 id="テスト見出し"><a href="#テスト見出し" class="header-anchor">#</a> テスト見出し</h2> <p>こんにちは。ねむーです。<br>
+今日仕事でふと思った疑問を大声で言おうと思います。</p> <h2 id="大きすぎるコード"><a href="#大きすぎるコード" class="header-anchor">#</a> 大きすぎるコード</h2> <p>たくさんの機能が集まったプロダクト。<br>
+たくさんの外部連携がある。<br>
+たくさんの処理仕様もある。<br>
+とても自分の頭では整理できない。どうすればいいのか。</p> <h2 id="ググってみた"><a href="#ググってみた" class="header-anchor">#</a> ググってみた</h2> <p>https://qiita.com/baby-degu/items/f9a70cc0dcb51061c530<br>
+このページに則って考えてみた。<br>
+コンテキストは割とわかっている。<br>
+ファイル配置もわかっている。これで大まかな依存先はわかった。大まかでいいのだろうか？<br>
+クラス図はわかっていない。Astahなど調べてみよう。
+ビルドする。これもやってみよう。
+小さなバグを直す代わりにリリースチケットを見よう。結局これが大事なんだ！</p> <h2 id="さらにググってみた"><a href="#さらにググってみた" class="header-anchor">#</a> さらにググってみた</h2> <p>https://www.infoq.com/jp/news/2007/12/does-lines-of-code-kill/<br>
+ライブラリをラップするのが諸悪の根源なのには同意する。<br>
+ライブラリを意識の外に外したいのに、ライブラリはアップデートを重ねてくるよね。。。
+リファクタリングもうまく効かないか。。。。</p> <h2 id="googleのソフトウェアエンジニアリングを読んでみた"><a href="#googleのソフトウェアエンジニアリングを読んでみた" class="header-anchor">#</a> Googleのソフトウェアエンジニアリングを読んでみた</h2> <p>良い知見はあまり得られなかった。。<br>
+小さく試すことが大事で、変更量が大事なのだと思う。</p> <h2 id="結局のところ"><a href="#結局のところ" class="header-anchor">#</a> 結局のところ</h2> <p>自分はPDMでもないんだし、案件レベルのことが分かればいいんだ。<br>
+リリースチケットを確認していくことにして最近の流れをキャッチアップしてみる。</p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/nemurin-hub/assets/js/app.1f09a953.js" defer></script><script src="/nemurin-hub/assets/js/2.733019b2.js" defer></script><script src="/nemurin-hub/assets/js/8.757fd98f.js" defer></script>
+  </body>
+</html>
